@@ -18,24 +18,20 @@ list of students out in the browser. The RSpec/Capybara tests for this lab can
 be found in `spec/features`. Both tests should be passing to complete the lab.
 
 > **Note** If you run into an ActiveRecord::PendingMigration error when you run
-> the tests, try `rake db:migrate RAILS_ENV=test` in the terminal then run the
+> the tests, try `bin/rails db:migrate RAILS_ENV=test` in the terminal, then run the
 > tests again.
 
 ## Instructions
 
 - Run `bundle install` from your terminal
 
-- Create a controller for students and have it inherit from
-  ApplicationController
+- Create a controller for students that inherits from
+  ApplicationController.
 - Create a route for the path `/students` that maps to a StudentsController `index` action.
-
-- Add a controller action to the StudentsController named `index`
-
-- Have the new `index` action pull in a list of all of the students with `Student.all` and store it in an instance variable
-
-- Create an `index.html.erb` view file and render it from your `Students#index` action. The `index.html.erb` file should be placed within a `views/students` folder.
-
-- In your view, iterate over the list of students returned from the index action in the controller and display the appropriate information.
+- Add a controller action to the StudentsController named `index`.
+- In the `index` action, load all students with `Student.all` and store them in an instance variable.
+- Create an `index.html.erb` view file in the `views/students` folder and render it from your `Students#index` action.
+- In your view, iterate over the list of students from the controller and display their information.
 
 ## Resources
 

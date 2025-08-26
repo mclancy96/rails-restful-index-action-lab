@@ -38,12 +38,11 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
 
   # Debug mode disables concatenation and preprocessing of assets.
+  # Asset pipeline configs removed for Rails 7.1 compatibility.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
 
-  # Suppress logger output for asset requests.
-  config.assets.quiet = true
+  # Asset pipeline configs removed for Rails 7.1 compatibility.
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
